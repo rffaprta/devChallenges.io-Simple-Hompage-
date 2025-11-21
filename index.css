@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(216, 226, 231);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 80px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: rgb(145, 144, 144);
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* NAVBAR */
+
+.nav-button-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-button-switch .sun-terang {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(216, 226, 231);
+  border-radius: 15px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  padding: 50px;
+}
+
+.hero-text {
+  flex: 1;
+  gap: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.hero-text p:nth-of-type(2) {
+  color: rgb(145, 144, 144);
+}
+
+.hero-text h1 {
+  font-size: 80px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.hero-buttons button {
+  padding: 15px;
+  border: 0;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(39, 92, 249);
+  color: #fff;
+}
+
+.hero-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-size: large;
+  color: rgb(39, 92, 249);
+}
+
+.hero-textTwo {
+  display: flex;
+  color: rgb(145, 144, 144);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) and (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) and (max-width: 600px) {
+  nav ul {
+    width: 100%;
+    gap: 50px;
+  }
+}
