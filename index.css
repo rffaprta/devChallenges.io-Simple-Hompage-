@@ -24,13 +24,13 @@ nav ul {
   list-style: none;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 50%;
   gap: 50px;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 800;
   color: rgb(145, 144, 144);
 }
@@ -75,8 +75,7 @@ nav ul li a:hover {
 }
 
 .hero-text p {
-  font-size: 20px;
-  margin: 10px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -85,7 +84,7 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .hero-image {
@@ -131,7 +130,7 @@ nav ul li a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 600) {
   nav ul {
     gap: 20px;
     width: 100%;
@@ -157,3 +156,4 @@ nav ul li a:hover {
     gap: 50px;
   }
 }
+
